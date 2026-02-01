@@ -12,13 +12,13 @@
     background-color: rgb(9, 32, 41);
 }
 
-.header_logo {
+.header_logo_ {
     width: 120px;
     height: 20px;
     padding-left: 140px;
 }
 
-.header_logo_container {
+.header_logo_field {
     display: flex;
     justify-content: space-between;
     align-items: center;
