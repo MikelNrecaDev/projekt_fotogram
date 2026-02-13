@@ -1,0 +1,13 @@
+const images = [brasilianische-wanderspinne.jpg,
+Bären_in_Alaska.jpg,
+city-split.jpg,
+empire-state-building-newyork.jpg,
+kosovo-prishtina.jpg,
+loxosceles-laeta.jpg,
+mexikanische-rotknievogelspinne.jpg,
+red-back-spider.jpg,
+Tokyo-Stadt.jpg,
+Trondheim.jpg,
+tv-tower-berlin.jpg,
+verona-stadt.jpg,
+]
