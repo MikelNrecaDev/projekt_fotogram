@@ -8,53 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <script src="data.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="templates.js" defer></script>
 </head>
-<body class="body">
+
+<body onload="init()" class="body">
     <header class="header">
         <div class="header_logo_field">
-            <img src="./img/fotogram_header_logo.png" class="header_logo">
+            <img src="./assets/img/fotogram_header_logo.png" class="header_logo">
         </div>
     </header>
     <main class="main_section">
-            <button class="commonstyle_photo" id="alaska" 
-                img src="./img/main_section_images/Bären in Alaska.jpg" alt="Bären auf Beutejagt in Alaska">
-            </button>
-            <button class="commonstyle_photo" id="tokyo" 
-                img src="./img/main_section_images/Tokyo Stadt.jpg"alt="Die Skyline von Tokyo">
-            </button>
-            <button class="commonstyle_photo" id="newyork" 
-                img src="./img/main_section_images/empire-state-building-new-york.jpg" alt="Die Skyline von New York">
-            </button>
-            <button class="commonstyle_photo" id="redknee_tarantula" 
-                img src="./img/main_section_images/mexikanische-rotknievogelspinne.jpg" alt="Rotknie Vogelspinne im Terrarium">
-            </button>
-            <button class="commonstyle_photo" id="berlin" 
-                img src="./img/main_section_images/tv-tower-berlin.jpg" alt="Berliner Fernsehturm">
-            </button>
-            <button class="commonstyle_photo" id="redback_spider" 
-                img src="./img/main_section_images/red-back-spider.jpg" alt="Australische Schwarze Wittwe auf Beutejagd">
-            </button>
-            <button class="commonstyle_photo" id="armed_spider" 
-                img src="./img/main_section_images/brasilianische-wanderspinne.jpg" alt="Eine Bananenspinne die sich ausruht">
-            </button>
-            <button class="commonstyle_photo" id="loxosceles_laeta_spider" 
-                img src="./img/main_section_images/loxosceles-laeta.jpg" alt="Chilenische Einsiedlerspinne auf der Lauer">
-            </button>
-            <button class="commonstyle_photo" id="trondheim" 
-                img src="./img/main_section_images/trondheim-2504300_1280.jpg" alt="Bunter Häuser am Ufer in Trondheim">
-            </button>
-            <button class="commonstyle_photo" id="verona" 
-                img src="./img/main_section_images/verona-stadt.jpg" alt="Altstadt von Verona in voller Pracht">
-            </button>
-            <button class="commonstyle_photo" id="split" 
-                img src="./img/main_section_images/city-split.jpg" alt="Hafen von Split in Sommerzeit">
-            </button>
-            <button class="commonstyle_photo" id="prishtina" 
-                img src="./img/main_section_images/kosovo-prishtina.jpg" alt="Prishtina an einem Sonntag">
-            </button>
+        <section class="gallery" id="gallery">
+        </section>
+        <section id="detail_box" class="d-none">
+        </section>
+    </main>
     </main>
     <footer class="footer">
-        <img src="./img/footer_logo.png" class="footer_logo">
+        <img src="./assets/img/footer_logo.png" class="footer_logo">
     </footer>
 </body>
 
