@@ -1,5 +1,6 @@
 .body {
     margin: 0;
+    box-sizing: border-box;
 }
 
 
@@ -46,25 +47,37 @@ h2 {
     font-size: 50px;
 }
 
-.picture_row {
+.gallery {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    max-width: 1440px;
-    margin: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
-.commonstyle_photo {
-    width: 100px;
-    height: 100px;
-    margin: 3px;
-    border-radius: 15px;
+.picture-card {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: none;
+    padding: 0;
+    background: none;
+    border-radius: 20px;
+    border: lightskyblue 4px solid;
 }
 
-.commonstyle_photo:hover {
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid;
-    transition: 0.4s ease;
+.picture-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
 
+.picture-card:hover {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid;
+  transition: 0.4s ease;
 }
 
 .footer {
@@ -81,4 +94,3 @@ h2 {
     height: 60px;
     margin-top: 50px;
 }
-
