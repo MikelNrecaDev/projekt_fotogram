@@ -2,6 +2,7 @@ function init() {
     initimages();
 }
 
+
 function initimages() {
     const galleryContainer = document.getElementById('gallery');
     galleryContainer.innerHTML = "";
@@ -12,3 +13,8 @@ function initimages() {
     }
 }
 
+
+ function openDetailView() {
+    document.getElementById("detail-box").open = true;
+
+ }
