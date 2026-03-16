@@ -9,12 +9,21 @@ function initimages() {
 
     for (let i = 0; i < images.length; i++) {
         const image = images[i];
-        galleryContainer.innerHTML += `<button class="picture-card"><img src="${image}" alt=""></button`;
+        galleryContainer.innerHTML += `<button class="picture-card"><img src="${image}" id="picturecard" onclick="OpenDetailView" alt=""></button`;
     }
 }
 
+function OpenDetailView() {
+        document.getElementById('picturecard').classList.add('detail-box');
+    }
 
- function openDetailView() {
-    document.getElementById("detail-box").open = true;
 
- }
+
+
+
+function closeDetailView() {
+    document.getElementById('close').onclick = function () {
+        document.getElementById('detail-box').classList.add('d-none');
+
+    }
+}
