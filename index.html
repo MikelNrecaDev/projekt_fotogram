@@ -11,25 +11,16 @@
     <script src="templates.js" defer></script>
 </head>
 
-<body onload="init()" class="body">
+<body onload="init()">
     <header class="header">
         <div class="header_logo_field">
             <img src="./assets/img/fotogram_header_logo.png" class="header_logo">
         </div>
     </header>
     <main class="main_section">
-        <section onclick="OpenDetailView()" class="gallery" id="gallery">
+        <section class="kastravec" id="gallery">
         </section>
-        <section id="detail-box" class="detail-box">
-            <button id="backward" class="left_button">
-                <img src="./assets/img/PfeilLinks.png"> 
-            </button>
-            <button id="forward" class="right_button">
-                <img src="./assets/img/PfeilRechts.png">
-            </button>
-             <button id="close" class="close_window" onclick="closeDetailView()">
-                <img src="./assets/img/Exit.png" alt="">
-            </button>
+        <section id="detail-box" class="detail-box d-none">
         </section>
     </main>
     <footer class="footer">
