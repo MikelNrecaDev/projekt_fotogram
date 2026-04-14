@@ -17,19 +17,26 @@ function initimages() {
 
 
 function openDetailView(i) {
-currentIndex = i;
-const image = images[currentIndex];
-const detailBox = document.getElementById("detail-box");
-detailBox.classList.remove("d-none");
+    currentIndex = i;
+    const image = images[currentIndex];
+    const detailBox = document.getElementById("detail-box");
+    detailBox.classList.remove("d-none");
 
-detailBox.innerHTML = "";
-detailBox.innerHTML = generateDetailViewHTML(image);
+    detailBox.innerHTML = "";
+    detailBox.innerHTML = generateDetailViewHTML(image);
 }
-
-
 
 function closeDetailView() {
-const detailBox = document.getElementById("detail-box")
-detailBox.classList.add("d-none") // Klasse d-none hinzufügen
+    const detailBox = document.getElementById("detail-box");
+    detailBox.classList.add("d-none"); // Klasse d-none hinzugefügt
 
 }
+
+function nextImage(i) {
+    currentIndex = i;
+    if (index == 1) {
+        index++;
+    }
+}
+
+document.getElementById('forward').addEventListener('click', nextImage);
