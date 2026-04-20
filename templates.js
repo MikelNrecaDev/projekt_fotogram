@@ -1,22 +1,22 @@
-function generateImageCardHTML(i, image) {
+function generateImageCardHTML(i, images) {
    return `
         <button class="picture-card">
-        <img src="${image}" id="picturecard" onclick="openDetailView('${i}')" alt="">
+        <img src="${images}" id="picturecard" onclick="openDetailView(${i})" alt="">
     </button
     `;
 }
 
-function generateDetailViewHTML(image) {
-    console.log("aktueller Index: ", currentIndex);
+function generateDetailViewHTML(index) {
+    console.log("aktueller Index: ", index);
     return `
         <detail>
             <div class="img-wrapper">
-                <img src="${image}" alt="">
+                <img src="${images}" alt="">
             </div>
-                  <button onclick="previousImage" id="backward" class="left_button">
+                  <button onclick="previousImage(index)" id="backward" class="left_button">
                     <img src="./assets/img/PfeilLinks.png"> 
                 </button>
-                <button onclick="nextImage" id="forward" class="right_button">
+                <button onclick="nextImage(index)" id="forward" class="right_button">
                     <img src="./assets/img/PfeilRechts.png">
                 </button>
                 <button id="close" class="close_window" onclick="closeDetailView()">
