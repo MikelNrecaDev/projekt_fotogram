@@ -1,5 +1,3 @@
-let currentIndex = 0;
-
 function init() {
     initimages();
 }
@@ -16,14 +14,13 @@ function initimages() {
 
 
 
-function openDetailView(i) {
-    currentIndex = i;
-    const image = images[currentIndex];
+function openDetailView(index) {
+    const image = images[index];
     const detailBox = document.getElementById("detail-box");
     detailBox.classList.remove("d-none");
 
     detailBox.innerHTML = "";
-    detailBox.innerHTML = generateDetailViewHTML(image);
+    detailBox.innerHTML = generateDetailViewHTML(image, index);
 }
 
 function closeDetailView() {
@@ -32,11 +29,9 @@ function closeDetailView() {
 
 }
 
-function nextImage(i) {
-    currentIndex = i;
-    if (index == 1) {
+function nextImage(index) {
+    if (index < images.length) {
         index++;
     }
+    return index;
 }
-
-document.getElementById('forward').addEventListener('click', nextImage);
