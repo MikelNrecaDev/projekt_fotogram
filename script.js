@@ -29,9 +29,6 @@ function closeDetailView() {
 
 }
 
-function nextImage(index) {
-    if (index < images.length) {
-        index++;
-    }
-    return index;
+function changeImage(image, index) {
+    
 }
