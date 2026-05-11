@@ -29,6 +29,36 @@ function closeDetailView() {
 
 }
 
-function changeImage(image, index) {
-    
+function nextImage(index) {
+    console.log("aktueller Index: ", index);
+    const openImage = document.getElementById("openImage");
+    console.log('openImage ', openImage);
+
+    openImage.src = images[index + 1];
+    console.log("neues Bild: ", openImage);
+
+    openDetailView(index + 1);
+
+    if (index === images.length - 1) {
+        openDetailView(0)
+    } else {
+        openDetailView(index + 1);
+    }
 }
+
+function previousImage(index) {
+    console.log("aktueller Index: ", index);
+    const openImage = document.getElementById("openImage");
+    console.log('openImage ', openImage);
+
+    if (index === images.length - 1) {
+        openDetailView(0)
+    } else {
+        openDetailView(index - 1);
+    }
+}
+
+
+
+
+
