@@ -49,15 +49,14 @@ function nextImage(index) {
 function previousImage(index) {
     console.log("aktueller Index: ", index);
     const openImage = document.getElementById("openImage");
-    console.log('openImage ', openImage);
+    console.log('openImage ', openImage);  
 
-    if (index === images.length - 1) {
-        openDetailView(0)
+    if (index < 0) {
+        openDetailView(12)
     } else {
         openDetailView(index - 1);
     }
 }
-
 
 
 
