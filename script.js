@@ -25,12 +25,11 @@ function openDetailView(index) {
 
 function closeDetailView() {
     const detailBox = document.getElementById("detail-box");
-    detailBox.classList.add("d-none"); // Klasse d-none hinzugefügt
+    detailBox.classList.add("d-none");
 
 }
 
 function nextImage(index) {
-    console.log("aktueller Index: ", index);
     const openImage = document.getElementById("openImage");
     console.log('openImage ', openImage);
 
@@ -47,12 +46,11 @@ function nextImage(index) {
 }
 
 function previousImage(index) {
-    console.log("aktueller Index: ", index);
     const openImage = document.getElementById("openImage");
-    console.log('openImage ', openImage);  
+    console.log('openImage ', openImage);
 
-    if (index < 0) {
-        openDetailView(12)
+    if (index === 0) {
+        openDetailView(images.length -1)
     } else {
         openDetailView(index - 1);
     }
