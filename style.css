@@ -101,8 +101,8 @@ h2 {
     align-items: center;
     justify-content: center;
     position: fixed;
-    height: 80vh;
-    width: 80vw;
+    height: 70vh;
+    width: 35vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -124,23 +124,25 @@ h2 {
     width: 90%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .img-wrapper img {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 600px;
-    max-width: 700px;
+    width: 600px;
+    height: 350px;
+    margin-top: 200px;
+    margin-left: 80px;
 }
 
 .left_button {
     display: flex;
-    position: absolute;
     justify-content: center;
     top: 50%;
     left: 0;
-    margin-left: 15px;
+    margin: 70px;
     height: 60px;
     width: 60px;
     border-radius: 100%;
@@ -150,22 +152,27 @@ h2 {
 
 .right_button {
     display: flex;
-    position: absolute;
     justify-content: center;
     top: 50%;
     right: 0;
-    margin-right: 15px;
+    margin: 70px;
     height: 60px;
     width: 60px;
     border-radius: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .close_window {
     display: flex;
     justify-content: center;
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 60px;
+    top: 25px;
     border-radius: 100%;
     height: 30px;
     width: 30px;
