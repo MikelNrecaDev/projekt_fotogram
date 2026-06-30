@@ -185,3 +185,8 @@ h2 {
     display: none !important;
 
 }
+
+.numbers {
+    font-size: 20px;
+    color:white;
+}
