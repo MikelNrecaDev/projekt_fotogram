@@ -12,3 +12,18 @@ const images = [
     './assets/img/main_section_images/tv-tower-berlin.jpg',
     './assets/img/main_section_images/verona-stadt.jpg',
 ]
+
+const descriptions = [
+    'Alaska Bears',
+    'Phoneutria is watching',
+    'Prishtina in the morning',
+    'City of Split',
+    'Empire State Building',
+    'Loxosceles Laeta',
+    'Redknee Tarantula',
+    'Australian Redback Spider',
+    'Tokyo City',
+    'Colorfull Trondheim',
+    'Berlin TV-Tower',
+    'Verona old Town',
+]
