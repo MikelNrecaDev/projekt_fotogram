@@ -29,6 +29,7 @@ function closeDetailView() {
 
 }
 
+
 function nextImage(index) {
     const openImage = document.getElementById("openImage");
     console.log('openImage ', openImage);
@@ -55,7 +56,3 @@ function previousImage(index) {
         openDetailView(index - 1);
     }
 }
-
-
-
-
