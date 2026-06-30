@@ -10,7 +10,7 @@ function generateDetailViewHTML(image, index) {
     return `
         <detail>
             <div class="img-wrapper">
-                <img id="openImage" src="${image}" alt="">
+                <img id="openImage" src="${image}" alt="${descriptions[index]}">
             </div>
             <div class="buttons">
                   <button onclick="previousImage(${index})" id="openImage" class="left_button">
